@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One';
+}
+
+body{
+    background-color: #CAE7F3;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4E8AE4;
+    padding: 0 30px; 
+    text-align: center;
+}
+
+#botones-inicio {
+    display: flex;
+}
+
+.ocultar {
+    display: none;
+}
+
+#logo-title {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+h1{
+    margin: 10px 0;
+}
+
+#imgLogo {
+    margin-right: 10px;
+    width: 50px; 
+    height: 50px; 
+}
+
+.header-button {
+    font-size: 15px;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a:visited{
+    text-decoration: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.iniciar-sesion {
+    color:#000;
+    background-color: #ACCDE5;
+    margin-right: 10px;
+}
+
+.registrarse {
+    background-color: #206AD9;
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #000;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* PANTALLA INICIO */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px; /* Ajusta el margen inferior del contenedor principal */
+}
+
+.left-content {
+    width: 50%;
+    height: auto;
+    flex: 1;
+    text-align: center; /* Alinea el texto a la izquierda */
+    margin-bottom: 20px; /* Ajusta el margen inferior del texto */
+}
+
+.texto-principal{
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.parrafo-principal{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.right-content {
+    width: 50%;
+    height: auto;
+    flex: 1;
+    margin-top: -10px;
+    text-align: center; /* Ajusta el contenido de la imagen al centro */
+}
+
+#imgAnimales {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#pantalla-inicial{
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0; /* Elimina el margen superior e inferior del texto */
+}
+
+.btn{
+    font-size: 35px;
+    border: none;
+    background: #206AD9;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background:  #012a68;
+    font-size: 45px;
+}
+
+/* PANTALLA juego */
+#pantalla-juego{
+    display: none;
+}
+.pantalla-juego{
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.pantalla-juego img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.opciones-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.opcion {
+    display: inline-block; /* Muestra las opciones en línea */
+    vertical-align: top; /* Alinea las imágenes en la parte superior */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+  
+.imagen-animal {
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+}
+
+.opcion .nombre {
+    margin-top: 10px;
+}
+/* clases que se aplicará cuando haya acertada la opcion  */
+.opcion .nombreAcertada{
+    background-color: yellowgreen;
+    color: #fff;
+}
+.opcion .letraAcertada{
+    background-color: yellowgreen;
+    color: #fff ;
+}
+/* clases que se aplicaran cuando se equivoque en la opcion elegida */
+.opcion .nombreNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+.opcion .letraNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+.informacion{
+    margin-left: 20px;
+    transition: .5s;
+}
+.informacion:hover{
+    color: blue;
+    font-size: 22px;
+}
+.informacion:visited{
+    text-decoration: none;
+}
+#pantalla-cuestionario{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.texto-instruccion{
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.opcion:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 1s;
+}
+.btn-manejar{
+    border: none;
+    background: #206AD9;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn-manejar:hover{
+    background:  #012a68;
+    font-size: 24px;
+}
+#formulario-adaptacion{
+    font-size: 20px;
+}
+
+/* PANTALLA final */
+#pantalla-final{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+}
+#pantalla-final #numCorrectas{
+    background-color: chartreuse;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+#pantalla-final #numIncorrectas{
+    background-color: darkred;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}

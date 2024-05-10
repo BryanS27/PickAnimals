@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Adaptación - PickAnimals</title>
+</head>
+<body>
+    <div id="pantalla-cuestionario" >
+    <p>Por favor, selecciona tus tipos de animales favoritos:</p>
+    
+    <form id="formulario-adaptacion">
+        <label><input type="checkbox" name="tipo-animal" value="mamiferos-terrestres"> Mamíferos terrestres</label><a class="informacion" href="https://es.wikipedia.org/wiki/Mammalia" target="_blank">Información</a><br>
+        <label><input type="checkbox" name="tipo-animal" value="mamiferos-acuaticos"> Mamíferos acuáticos</label><a class="informacion" href="https://es.wikipedia.org/wiki/Mam%C3%ADferos_marinos" target="_blank">Información</a><br>
+        <label><input type="checkbox" name="tipo-animal" value="oviparos-terrestres"> Ovíparos terrestres</label><a class="informacion" href="https://atlasanimal.com/oviparos-terrestres/" target="_blank">Información</a><br>
+        <label><input type="checkbox" name="tipo-animal" value="oviparos-acuaticos"> Ovíparos acuáticos</label><a class="informacion" href="https://atlasanimal.com/acuaticos-oviparos/" target="_blank">Información</a><br>
+        <label><input type="checkbox" name="tipo-animal" value="reptiles"> Reptiles</label><a class="informacion" href="https://es.wikipedia.org/wiki/Reptilia" target="_blank">Información</a><br>
+
+        <br/>
+        <button class="btn-manejar" type="submit">Continuar</button>
+    </form>
+    </div>
+    <div class="pantalla-juego" id="pantalla-juego">
+        <div class="texto-instruccion">Selecciona el <span id="animal-a-seleccionar"></span></div>
+        <div class="opciones-container"></div>
+    </div>
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <script src="adaptacion.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

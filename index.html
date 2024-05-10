@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo.css"/>
+    <title>PickAnimals</title>
+</head>
+<body>
+
+    <!-- Encabezado con logo y botones -->
+    <div id="header-container">
+        <div id="logo-title">
+            <img src="img/Logo.png" alt="Logo" id="imgLogo">
+            <h1>PickAnimals</h1>
+        </div>
+        <div id="botones-inicio">
+            <button class="header-button iniciar-sesion" onclick="iniciarSesion()">Inicia sesión</button>
+            <button class="header-button registrarse" onclick="registrarse()">Regístrate</button>
+        </div>
+    </div>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial" class="container">
+        <div class="left-content">
+            <h2 class="texto-principal">¡Juega, diviértete y aprende acerca de animales!</h2>
+            <p class="parrafo-principal">Juega a reconocer animales de una manera dinámica y divertida.</p>
+            <a class="btn" href="adaptacion.html">JUGAR</a>
+        </div>
+        <div class="right-content">
+            <img src="img/Animales.jpeg" alt="" id="imgAnimales">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
